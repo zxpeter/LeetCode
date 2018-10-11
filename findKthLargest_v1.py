@@ -1,5 +1,7 @@
 class Solution:
-
+    
+    # 最大堆是要建立长度为k的然后依次往里添加，，还是建立长度为n的，然后取出最大的k个。
+    
     def partition(self, nums, l, r):
         last = nums[r]
         i = l - 1
