@@ -48,3 +48,16 @@ class Solution:
         for _ in range(len(nums)-k):
             heapq.heappop(heap)
         return heapq.heappop(heap)
+    
+class Solution:
+    def findKthLargest(self, nums, k):  # in big data can not store all in memory
+        heap = []
+        for i in range(k):
+            heapq.heappush(heap, nums[i])
+        for j in range(k, len(nums)):    
+            if heap[0] < nums[j]:
+                heapq.heappop(heap)
+                heapq.heappush(heap, nums[j])
+        return heap[0]
+            
+    
