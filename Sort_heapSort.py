@@ -11,7 +11,7 @@ def adjust_heap(nums, n, root):
             large = 2*root + 1
         if nums[large] > nums[root]:
             nums[large], nums[root] = nums[root], nums[large]
-            adjust_heap(nums, n, large) # adjust the sub tree which root is k
+            adjust_heap(nums, n, large) # adjust the sub tree which root is k, 开始从交换之后的叶子节点递归调整下面的子树
 
 def heap_sort(nums):
     n = len(nums)
