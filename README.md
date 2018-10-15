@@ -1,4 +1,4 @@
 # LeetCode
-I don't know how long i can keep coding 
+I don't know how long I can keep coding 
 but take it easy 
 hello,LEETCODE
